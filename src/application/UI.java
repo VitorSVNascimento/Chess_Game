@@ -9,7 +9,7 @@ public class UI {
 		System.out.println();
 		for(int i = 0 ; i<pieces.length;i++) {
 			
-			System.out.printf("%c %d %c",Constant.TAB,(Board.NUMBER_OF_ROWS-i),Constant.BLANK_SPACE);
+			System.out.printf("%c %d%c",Constant.TAB,(Board.NUMBER_OF_ROWS-i),Constant.BLANK_SPACE);
 			for(int j = 0 ; j<pieces.length ; j++)
 				printPiece(pieces[i][j]);
 			System.out.println();
