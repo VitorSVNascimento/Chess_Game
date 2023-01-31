@@ -2,6 +2,8 @@ package boardgame;
 
 public class Board {
 	
+	public static final int NUMBER_OF_ROWS = 8,NUMBER_OF_COLLUMNS = 8;
+	
 	private int rows,collumns;
 	private Piece pieces[][];
 
@@ -36,5 +38,12 @@ public class Board {
 		return pieces[position.getRow()][position.getCollumn()];
 		
 	}
+	
+	public void placePiece (Piece piece, Position position) {
+	
+		pieces[position.getRow()][position.getCollumn()] = piece;
+		piece.position = position;
+	}
+	
 	
 }
